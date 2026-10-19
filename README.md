@@ -1,228 +1,202 @@
-# 🌐 NetRoute — Network Topology & Routing Simulator
+# 🌐 NetRoute — Network Topology and Routing Simulator
 
 <p align="center">
-  <strong>An Interactive Computer Networks Mini-Project</strong><br>
-  Visualize network topologies, calculate shortest routes, simulate link failures, and explore file transfer through a web dashboard.
+  <strong>A Simple and Interactive Computer Networks Mini Project</strong>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.14-blue?logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask" alt="Flask">
-  <img src="https://img.shields.io/badge/NetworkX-Graph%20Routing-orange" alt="NetworkX">
+  <img src="https://img.shields.io/badge/NetworkX-Graph%20Algorithms-orange" alt="NetworkX">
   <img src="https://img.shields.io/badge/Tests-14%20Passed-brightgreen?logo=pytest" alt="Tests">
-  <img src="https://img.shields.io/badge/Interface-Interactive-8A2BE2" alt="Interactive Interface">
-  <img src="https://img.shields.io/badge/Project-Computer%20Networks-0078D4" alt="Computer Networks">
+  <img src="https://img.shields.io/badge/Project-Computer%20Networks-purple" alt="Computer Networks">
 </p>
 
 ---
 
-## 📌 1. Introduction
+## 📌 1. About the Project
 
-**NetRoute** is a web-based network topology and routing simulator developed as a Computer Networks mini-project using Python, Flask, and NetworkX.
+**NetRoute** is a web-based network topology and routing simulator developed using Python, Flask, and NetworkX.
 
-The project represents a computer network as a graph consisting of routers and weighted connections. Users can select a network topology, choose a sender and destination, calculate the shortest path, and observe an animated packet moving along the selected route.
+It helps students understand how routers connect to each other, how data can travel through a network, and how a routing algorithm finds a path from a sender to a destination.
 
-The application also includes network link failure and recovery functionality, along with file upload and download through the web interface.
+The project provides a visual dashboard where users can explore network topologies, select routers, simulate packet movement, and experiment with network links. It also includes file upload and download functionality.
 
-The goal is to make important networking concepts easier to understand through interactive visualization.
+Instead of working only with theoretical diagrams, users can interact with a simulated network through a web browser.
 
-## 🎯 2. Project Objectives
+### 🎯 Main Goal
 
-- 🧩 Represent a computer network using graph structures.
-- 🌐 Visualize routers and connections between them.
-- 🧭 Calculate the minimum-cost route between two routers.
-- 📦 Animate packet movement along a selected route.
-- 🔌 Demonstrate network link failure and recovery.
-- 📤 Support file upload and download through the application.
-- 🖥️ Provide an interactive web-based dashboard.
-- 🧪 Validate core functionality through automated tests.
+To demonstrate important Computer Networks concepts through a simple, visual, and interactive application.
 
-## ✨ 3. Key Features
+## ✨ 2. Key Features
 
 | Feature | Description |
 |---|---|
-| 🌐 Topology selection | Sample, star, ring, and mesh network models |
-| 🧭 Shortest-path routing | Finds a minimum-cost path using NetworkX |
-| 📦 Packet animation | Visualizes movement from source to destination |
-| 🔌 Failure simulation | Supports disabling and restoring network links |
-| 📁 File operations | Uploads and downloads files through the web application |
-| 🖥️ Dashboard | Interactive browser-based interface |
-| 🧪 Unit testing | Tests topology, addressing, routing, and failure modules |
-| 🧱 Modular design | Separates application logic into Python modules |
+| 🖥️ Interactive dashboard | View and interact with the network through a web interface. |
+| 🔗 Network topologies | Explore different ways of connecting routers. |
+| 🧭 Shortest-path routing | Find a route between a source router and a destination router. |
+| 📦 Packet animation | Visualize a simulated packet travelling along a selected route. |
+| 🚦 Link failure simulation | Disable or restore a network link to study its effect. |
+| 📁 File upload | Upload files through the web application. |
+| 📥 File download | Download files made available by the application. |
+| 📊 Network visualization | View routers, connections, and routing information. |
+| 🧪 Automated testing | Run tests to check important network functions. |
+| 🌍 Web deployment | Deploy the application so it can be accessed through a public URL. |
 
-## 🛠️ 4. Technology Stack
+## 🛠️ 3. Technologies Used
 
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
-  <img src="https://img.shields.io/badge/NetworkX-FF8C00?style=for-the-badge" alt="NetworkX">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="pytest">
-</p>
-
-| Technology | Role in the project |
+| Technology | Purpose |
 |---|---|
-| Python | Core application logic |
-| Flask | Web server and request handling |
-| NetworkX | Graph modeling and shortest-path calculations |
-| HTML | Dashboard structure |
-| CSS | Layout, styling, and visual effects |
-| JavaScript | Interactive controls and packet animation |
-| pytest | Automated testing |
-| Git | Version control |
-| GitHub | Source code repository |
-| Render | Planned hosting platform |
+| 🐍 Python | Implements the network logic and application backend. |
+| 🌶️ Flask | Creates the web application and handles HTTP requests. |
+| 🕸️ NetworkX | Represents the network as a graph and supports graph algorithms. |
+| 🌐 HTML | Structures the web page. |
+| 🎨 CSS | Controls the dashboard's appearance, layout, and styling. |
+| ⚡ JavaScript | Handles interactive dashboard behavior and visual animations. |
+| 🧪 pytest | Runs automated tests. |
+| 🐙 Git and GitHub | Track project changes and store the source code online. |
+| 🚀 Gunicorn | Runs the Flask application in a production hosting environment. |
 
-## 🏗️ 5. System Architecture
+## 🏗️ 4. System Architecture
 
-NetRoute uses a modular architecture that separates the user interface, web application, network functionality, and testing.
-
-### Architecture diagram
+NetRoute follows a simple web application architecture. The browser displays the dashboard, Flask handles requests, and the network modules perform the routing and simulation logic.
 
 ```mermaid
-flowchart TB
-    USER(["👤 User"])
-
-    subgraph FRONTEND["🎨 Presentation Layer"]
-        UI["🖥️ Web Dashboard<br/>HTML + CSS + JavaScript"]
-        ANIM["📦 Packet Animation"]
-    end
-
-    subgraph BACKEND["⚙️ Application Layer"]
-        APP["🐍 Flask Application<br/>app.py"]
-        API["🔗 Web Routes and API Endpoints"]
-    end
-
-    subgraph NETWORK["🌐 Network Simulation Layer"]
-        TOPO["🧩 Topology Module"]
-        ADDR["🏷️ Addressing Module"]
-        ROUTE["🧭 Routing Module"]
-        FAIL["🔌 Failure and Recovery Module"]
-        GRAPH[("🕸️ Network Graph<br/>Routers + Weighted Links")]
-    end
-
-    subgraph FILES["📁 File Operations"]
-        UP["📤 Upload"]
-        DOWN["📥 Download"]
-    end
-
-    subgraph TESTING["🧪 Testing Layer"]
-        TEST["pytest Test Suite"]
-    end
-
-    USER <--> UI
-    UI <--> APP
-    APP <--> API
-    API <--> TOPO
-    API <--> ADDR
-    API <--> ROUTE
-    API <--> FAIL
-    API <--> UP
-    API <--> DOWN
-    TOPO --> GRAPH
-    ROUTE <--> GRAPH
-    FAIL <--> GRAPH
-    API --> ANIM
-    TEST -.-> TOPO
-    TEST -.-> ADDR
-    TEST -.-> ROUTE
-    TEST -.-> FAIL
-
-    classDef user fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
-    classDef frontend fill:#f3e8ff,stroke:#9333ea,color:#581c87
-    classDef backend fill:#dcfce7,stroke:#16a34a,color:#14532d
-    classDef network fill:#ffedd5,stroke:#ea580c,color:#7c2d12
-    classDef files fill:#fce7f3,stroke:#db2777,color:#831843
-    classDef testing fill:#cffafe,stroke:#0891b2,color:#164e63
-
-    class USER user
-    class UI,ANIM frontend
-    class APP,API backend
-    class TOPO,ADDR,ROUTE,FAIL,GRAPH network
-    class UP,DOWN files
-    class TEST testing
+flowchart TD
+    A["👤 User"] --> B["🌐 Web Browser"]
+    B --> C["🎨 HTML, CSS and JavaScript"]
+    C --> D["🌶️ Flask Application"]
+    D --> E["🕸️ Network Topology"]
+    D --> F["🧭 Routing Algorithm"]
+    D --> G["🚦 Link Failure Handling"]
+    D --> H["📁 File Handling"]
+    E --> I["📊 Network Data"]
+    F --> I
+    G --> I
+    I --> D
+    H --> D
+    D --> C
 ```
 
-### Architecture explanation
+### 🔍 How the Architecture Works
 
-**1. Presentation layer — `templates/index.html`**
+1. **User interface:** The user opens the dashboard and selects an operation.
+2. **Frontend:** HTML, CSS, and JavaScript display the network and handle user interactions.
+3. **Flask backend:** The server receives requests and calls the appropriate Python functions.
+4. **Topology module:** Creates and manages network graphs.
+5. **Routing module:** Calculates the route between selected routers.
+6. **Failure module:** Supports disabling and restoring links.
+7. **File handling:** Manages the application's file upload and download features.
+8. **Response:** The server returns the result for the dashboard to display.
 
-Provides the browser interface, topology controls, sender and destination selection, route display, and animation. CSS controls appearance, while JavaScript handles interactive behavior.
+*Note: The packet animation represents simulated network traffic. File uploads and downloads are handled by the web application; they are not automatically transmitted through the simulated router path.*
 
-**2. Application layer — `app.py`**
-
-Runs Flask and connects browser requests to the network modules and file operations.
-
-**3. Topology module — `network/topology.py`**
-
-Creates the sample, star, ring, and mesh network graphs.
-
-**4. Addressing module — `network/addressing.py`**
-
-Contains the network addressing logic used by the project.
-
-**5. Routing module — `network/routing.py`**
-
-Calculates a shortest route between routers using weighted graph edges.
-
-**6. Failure module — `network/failures.py`**
-
-Provides functionality for disabling links, restoring links, and working with the active network.
-
-**7. File operations**
-
-The web application processes uploaded files and provides available files for download. The simulated packet animation is a visualization; it does not by itself prove that uploaded bytes travel through the simulated routers.
-
-**8. Testing layer — `tests/`**
-
-Contains automated tests for the main network modules.
-
-### 🔄 Request flow
-
-1. The user selects a topology, sender, and destination.
-2. The browser sends a request to the Flask application.
-3. The application obtains the selected network graph.
-4. The routing module calculates the shortest route.
-5. The result is returned to the browser.
-6. The dashboard displays the route and animates packet movement.
-7. File uploads and downloads are processed through the web application.
-
-## 📂 6. Project Structure
+## 📂 5. Project Structure
 
 ```text
 NetRoute/
 │
-├── 📁 network/
+├── network/
 │   ├── topology.py       # Creates network topologies
-│   ├── addressing.py     # Network addressing logic
-│   ├── routing.py        # Shortest-path routing
-│   └── failures.py       # Link failure and recovery
+│   ├── addressing.py     # Network addressing functions
+│   ├── routing.py        # Finds routes between routers
+│   └── failures.py       # Handles link failures
 │
-├── 📁 tests/
-│   ├── test_topology.py
+├── tests/
+│   ├── test_topology.py  # Tests topology functions
 │   ├── test_addressing.py
-│   ├── test_routing.py
-│   └── test_failures.py
+│   ├── test_routing.py   # Tests routing functions
+│   └── test_failures.py  # Tests link failure functions
 │
-├── 📁 templates/
+├── templates/
 │   └── index.html        # Web dashboard
 │
 ├── app.py                # Flask application
-├── main.py               # Command-line demonstration
+├── main.py               # Main project entry point
 ├── requirements.txt      # Python dependencies
-├── .gitignore            # Excluded files
+├── .gitignore            # Files excluded from Git
 └── README.md             # Project documentation
 ```
 
-## 🌐 7. Network Topologies
+### 📘 Important Files
 
-A network topology describes how routers or devices are interconnected.
+- **`app.py`** — connects the web interface with the Python backend.
+- **`main.py`** — provides the main project entry point.
+- **`topology.py`** — creates the network graph and its connections.
+- **`routing.py`** — calculates the shortest path between routers.
+- **`failures.py`** — manages disabled and restored links.
+- **`addressing.py`** — contains network addressing functionality.
+- **`index.html`** — contains the dashboard interface.
+- **`requirements.txt`** — lists the Python packages needed by the project.
+- **`tests/`** — contains automated tests for core functionality.
 
-### 🟣 Sample topology
+## 🔗 6. Network Topologies
 
-The original sample graph contains four routers and five weighted connections.
+A network topology describes how devices such as routers are connected.
+
+NetRoute includes functions for creating the following topology types.
+
+### ⭐ Star Topology
+
+<details>
+<summary>Click to learn about star topology</summary>
+
+In a star topology, every outer device connects to a central device.
+
+**Advantages**
+- Easy to manage and troubleshoot.
+- A single outer-link failure usually affects only its connected device.
+
+**Disadvantages**
+- The central device can become a single point of failure.
+
+</details>
+
+### 🔄 Ring Topology
+
+<details>
+<summary>Click to learn about ring topology</summary>
+
+In a ring topology, each router connects to neighboring routers in a circular arrangement.
+
+**Advantages**
+- Provides an organized connection structure.
+- Can offer an alternative route when suitable links remain available.
+
+**Disadvantages**
+- A link failure can interrupt connectivity in a simple ring unless another route is available.
+
+</details>
+
+### 🕸️ Mesh Topology
+
+<details>
+<summary>Click to learn about mesh topology</summary>
+
+In a mesh topology, routers have multiple connections to other routers.
+
+**Advantages**
+- Can provide alternative paths.
+- Helps demonstrate route selection and link failure recovery.
+
+**Disadvantages**
+- Requires more connections as the number of routers increases.
+
+</details>
+
+The exact topology displayed depends on the topology selected in the application.
+
+## 🧭 7. Routing Algorithm
+
+Routing determines the path that data should take from a source to a destination.
+
+NetRoute represents routers as **nodes** and network connections as **edges**. Each edge can have a cost, which represents the relative cost of using that connection.
+
+The routing module uses NetworkX to calculate a shortest path.
+
+### 🧮 Example Network
+
+The sample network contains these connections:
 
 | Connection | Cost |
 |---|---:|
@@ -232,138 +206,116 @@ The original sample graph contains four routers and five weighted connections.
 | R2 — R4 | 4 |
 | R3 — R4 | 2 |
 
-These costs are abstract routing weights, not necessarily real-world latency or physical distance.
+Suppose the source is **R1** and the destination is **R4**.
 
-### 🔵 Star topology
+The possible route through R2 and R3 has this total cost:
 
-All outer routers connect to a central router.
+`R1 → R2 → R3 → R4`
 
-**Advantages**
-- Simple to understand.
-- Easy to manage.
-- Individual outer-link failures can be isolated.
+Total cost = 2 + 1 + 2 = **5**
 
-**Disadvantage**
-- Failure of the central router can disconnect the network.
+The direct alternative through R2 has a cost of 2 + 4 = **6**.
 
-### 🟢 Ring topology
+Therefore, the route through R3 has the lower total cost.
 
-Routers are connected in a closed loop.
+The routing function returns information about the source, destination, path, total cost, and whether the destination is reachable.
 
-**Advantages**
-- Structured connection pattern.
-- An alternative direction around the ring may remain available after a link failure.
+**Why is this useful?**
 
-**Disadvantage**
-- Connectivity depends on which links remain operational.
+Shortest-path routing helps demonstrate how a network can select a route based on link costs rather than simply choosing the route with the fewest visible connections.
 
-### 🟠 Mesh topology
+## 🔁 8. Application Workflow
 
-Routers have multiple connections to other routers.
+The following diagram shows the main routing workflow.
 
-**Advantages**
-- Multiple possible routes.
-- Can provide resilience through alternative paths.
+```mermaid
+flowchart TD
+    A["▶️ Start Application"] --> B["🌐 Open Dashboard"]
+    B --> C["🔗 Load Network"]
+    C --> D["📍 Select Source and Destination"]
+    D --> E["🧭 Calculate Route"]
+    E --> F{"Destination Reachable?"}
+    F -->|Yes| G["📦 Animate Simulated Packet"]
+    F -->|No| H["⚠️ Show Route Unavailable"]
+    G --> I["📊 Display Route Information"]
+    H --> I
+    I --> J["🔄 Try Another Route or Link State"]
+```
 
-**Disadvantages**
-- Requires more connections.
-- The graph becomes more complex as the network grows.
+### Step-by-Step Explanation
 
-## 🧭 8. Shortest-Path Routing
+1. Start the Flask application.
+2. Open the dashboard in a browser.
+3. Select a network topology.
+4. Choose a source router and destination router.
+5. Request a route calculation.
+6. The backend checks the network and calculates a path.
+7. If a path exists, the dashboard can visualize packet movement.
+8. If no path exists, the application can report that the destination is unreachable.
+9. Repeat the process after changing the route or network links.
 
-NetRoute represents the network as a weighted graph. Each router is a node, and each connection is an edge with a cost.
+## 🚦 9. Link Failure Simulation
 
-The routing module uses NetworkX to find a minimum-cost path between the source and destination.
+Real networks can experience failures caused by damaged cables, disconnected devices, or faulty interfaces.
 
-### Cost calculation
+NetRoute includes functions for disabling and enabling network links.
 
-\[
-C(P)=\sum_{e\in P} w(e)
-\]
+### 🔴 When a Link Is Disabled
 
-Where:
+- The selected connection is made unavailable to the routing logic.
+- The network's connectivity may change.
+- A previously available route may become unavailable.
+- The route calculation can be repeated to examine the effect.
 
-- \(P\) is a path through the network.
-- \(e\) is a connection along that path.
-- \(w(e)\) is the connection's weight.
-- \(C(P)\) is the total path cost.
+### 🟢 When a Link Is Restored
 
-### Worked example: R1 to R4
+- The connection is made available again.
+- The network can be checked for a usable route.
+- The shortest path may return to its previous value.
 
-**Path A:** R1 → R2 → R4
+This feature demonstrates the importance of network reliability and alternative routes.
 
-Cost = 2 + 4 = **6**
+## 📁 10. File Upload and Download
 
-**Path B:** R1 → R3 → R4
+NetRoute also provides file upload and download functionality through its web application.
 
-Cost = 5 + 2 = **7**
+### Upload Workflow
 
-**Path C:** R1 → R2 → R3 → R4
+```mermaid
+flowchart TD
+    A["👤 Choose a File"] --> B["📤 Upload Through Dashboard"]
+    B --> C["🌶️ Flask Receives Request"]
+    C --> D["💾 Application Handles File"]
+    D --> E["✅ Display Upload Result"]
+```
 
-Cost = 2 + 1 + 2 = **5**
+### Download Workflow
 
-Therefore, the minimum-cost route is:
+```mermaid
+flowchart TD
+    A["📋 View Available Files"] --> B["📥 Select a File"]
+    B --> C["🌶️ Flask Handles Download Request"]
+    C --> D["📄 Return File to Browser"]
+```
 
-**R1 → R2 → R3 → R4**
+These features demonstrate basic file transfer through a web application. They do not, by themselves, implement a real router-by-router file transfer protocol.
 
-**Total cost: 5**
-
-The implementation is located in `network/routing.py`, in `find_shortest_route()`.
-
-## 🔌 9. Link Failure and Recovery
-
-Network connections can fail because of physical damage, hardware issues, or configuration errors.
-
-NetRoute provides functions to disable and restore network links.
-
-### Failure workflow
-
-1. A network link is disabled.
-2. The active network changes to reflect the unavailable connection.
-3. Routing can be evaluated against the remaining network.
-4. The application can determine whether a route remains available.
-
-### Recovery workflow
-
-1. The failed link is restored.
-2. The connection becomes available again.
-3. The network can be evaluated in its recovered state.
-
-This feature demonstrates network connectivity, alternative routes, and resilience. An alternative route is only available when the remaining graph supports one.
-
-## 📤 10. File Upload and Download
-
-NetRoute provides file operations through its web interface.
-
-### Upload process
-
-1. Select a file in the dashboard.
-2. Submit the file to the Flask application.
-3. The server processes the uploaded file.
-4. The interface displays the upload result.
-
-### Download process
-
-1. Select an available file.
-2. Request the file through the application.
-3. The server returns the file for download.
-
-### Important distinction
-
-The file upload and download functionality is real web-server functionality, while the sender-to-destination packet movement is a routing visualization unless the application explicitly connects the file's bytes to the simulated network.
-
-For public deployment, file size limits, filename validation, persistent storage, and access controls should be considered.
+**Security note:** A production deployment should validate filenames and file types, limit upload sizes, restrict access to uploaded files where appropriate, and avoid exposing private files.
 
 ## ⚙️ 11. Installation and Setup
 
+Follow these instructions to run NetRoute on your local computer.
+
 ### Prerequisites
 
-- Python 3.14 or another compatible Python version.
-- Git.
-- A code editor such as Visual Studio Code.
-- A modern browser.
+Install the following software:
 
-### Step 1 — Clone the repository
+- Python
+- Visual Studio Code or another code editor
+- Git (optional for cloning and version control)
+- A modern web browser
+
+### Step 1: Clone the Repository
 
 Replace `YOUR-USERNAME` with your GitHub username.
 
@@ -372,158 +324,185 @@ git clone https://github.com/YOUR-USERNAME/NetRoute.git
 cd NetRoute
 ```
 
-### Step 2 — Create a virtual environment
+If the project is already on your computer, open its existing folder instead.
 
-On Windows:
+### Step 2: Create a Virtual Environment
 
-```powershell
+```bash
 python -m venv .venv
 ```
 
-### Step 3 — Activate it
+A virtual environment keeps this project's Python packages separate from other projects.
+
+### Step 3: Activate the Virtual Environment
+
+**Windows PowerShell:**
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-If PowerShell blocks activation in the current session:
+If PowerShell blocks activation, follow the official Python or Microsoft guidance for your system rather than changing security settings unnecessarily.
 
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\.venv\Scripts\Activate.ps1
-```
+### Step 4: Install Dependencies
 
-### Step 4 — Install dependencies
-
-```powershell
+```bash
 python -m pip install -r requirements.txt
 ```
 
-### Step 5 — Run the tests
+This installs the packages listed in `requirements.txt`.
 
-```powershell
-python -m pytest -v
-```
+### Step 5: Start the Application
 
-## ▶️ 12. Running NetRoute
-
-### Start the web application
-
-```powershell
+```bash
 python app.py
 ```
 
-Open the local URL shown by Flask. In the development setup, it is:
+If your project instructions use a different entry point, use the command appropriate for that entry point.
 
-**http://127.0.0.1:5000**
+Open the local URL printed by Flask in your terminal. For a standard local configuration, this is often:
 
-Keep the terminal running while using the dashboard.
+`http://127.0.0.1:5000`
 
-### Run the command-line demonstration
+Keep the terminal running while you use the application.
 
-```powershell
-python main.py
-```
+## 🧪 12. Running the Tests
 
-## 🧪 13. Testing
+NetRoute includes automated tests for important network operations.
 
-The project uses pytest to test its core modules.
+Run the following command from the project directory:
 
-```powershell
+```bash
 python -m pytest -v
 ```
 
-Test files:
+The tests cover areas such as:
 
-- `tests/test_topology.py`
-- `tests/test_addressing.py`
-- `tests/test_routing.py`
-- `tests/test_failures.py`
+- Network topology creation.
+- Network addressing.
+- Route calculation.
+- Link failure handling.
 
-**Development test result:** 14 tests were reported as passing during development.
+**Development test result:** 14 tests passed during development. Run the command above to verify the result in your current environment.
 
-These tests validate the cases they cover. They do not automatically guarantee that every browser feature or cloud deployment scenario works.
+Automated tests help catch errors early and make it easier to maintain the project as new features are added.
 
-## 🖥️ 14. Dashboard Usage
+## 🖥️ 13. How to Use the Dashboard
 
-1. Start the Flask application.
-2. Open the dashboard.
-3. Select a network topology.
-4. Choose the sender and destination.
+Once the application is running:
+
+1. Open the dashboard in your browser.
+2. Select an available network topology.
+3. Choose the source router.
+4. Choose the destination router.
 5. Start the route simulation.
-6. Observe the packet animation and route result.
-7. Upload a small test file.
-8. Download an available file.
-9. Test failure and recovery controls if they are exposed in the interface.
+6. Observe the selected path and packet animation.
+7. Review the route information displayed by the application.
+8. If supported by the dashboard controls, experiment with link failures and restored connections.
+9. Use the file section to upload or download files.
 
-For the original sample topology, R1 to R4 should have a shortest-path cost of 5 if the example edge weights are unchanged.
+The exact controls and displayed information depend on the current dashboard implementation.
 
-## 🚀 15. Deployment
+## 🚀 14. Deployment
 
-The project can be deployed on a Python-compatible hosting platform such as Render.
+NetRoute can be deployed to a hosting service such as Render so other people can access it through a public URL.
 
-Before deployment:
+A typical deployment uses:
 
-- Ensure `requirements.txt` contains the required runtime dependencies.
-- Confirm that the repository includes all source files.
-- Configure the platform to install dependencies.
-- Configure a production web-server command appropriate for the deployment platform.
-- Test the deployed routes, dashboard, uploads, and downloads.
-- Configure persistent storage if uploaded files must survive service restarts or redeployments.
+- **Source repository:** GitHub
+- **Web framework:** Flask
+- **Production server:** Gunicorn
+- **Build or installation command:** `pip install -r requirements.txt`
+- **Start command:** `gunicorn app:app`
 
-**Storage note:** A local folder on a hosted instance may be temporary. Do not assume uploaded files will persist unless the hosting platform and application are configured to retain them.
+The start command assumes that `app.py` contains a Flask application object named `app`.
 
-## ⚠️ 16. Limitations
+### Important Deployment Notes
 
-- The network is simulated using a graph rather than physical routers.
-- Connection costs are abstract weights.
-- Packet animation visualizes a route; it is not proof of real packet forwarding.
-- File upload and download are handled by the web application.
-- Persistent storage and multi-user access depend on server configuration.
-- The application is an educational project, not a production-grade networking platform.
+- Configure debug mode off in production.
+- Never commit passwords, API keys, or other secrets.
+- Check the hosting service's filesystem rules before relying on uploaded files being stored permanently.
+- Temporary or ephemeral storage may be cleared during a restart or redeployment.
+- Configure persistent storage or an external file-storage service if permanent file retention is required.
+- Test file upload and download functionality after deployment.
 
-## 🔮 17. Future Enhancements
+## ⚠️ 15. Project Scope and Limitations
 
-Potential improvements include:
+NetRoute is an educational simulator. It is designed to demonstrate network concepts, not to replace real networking equipment or production routing software.
 
-- 📊 Live charts for route cost and transfer progress.
-- ⏱️ Latency and throughput measurements.
-- 📉 Packet loss simulation.
-- 🔁 Automatic route recalculation after failures.
-- 🔐 Authentication and controlled file sharing.
-- ☁️ Persistent cloud storage.
-- 📱 Improved mobile responsiveness.
-- 🧪 Additional integration and end-to-end tests.
-- 🌍 Deployment with production security settings.
+Current scope includes graph-based network simulation, shortest-path calculations, link failure handling, a visual dashboard, and web-based file operations.
 
-## 🎓 18. Learning Outcomes
+Unless separately implemented, the project does not provide:
 
-This project provides practical experience with:
+- Real router configuration or hardware control.
+- Actual IP packet forwarding through physical routers.
+- A complete implementation of a production routing protocol such as OSPF or BGP.
+- Guaranteed permanent storage of uploaded files on temporary hosting.
+- A security audit or production-grade file-sharing system.
 
-- Computer network topology concepts.
-- Graph modeling and weighted routing.
-- Shortest-path algorithms.
-- Network failure and recovery.
-- Python modular programming.
-- Flask web development.
-- Interactive HTML, CSS, and JavaScript.
-- File handling.
-- Automated testing with pytest.
-- Version control with Git.
-- Source hosting and cloud deployment.
+These distinctions are important when presenting the project in a viva or technical demonstration.
 
-## 🏁 Conclusion
+## 🔮 16. Future Enhancements
 
-NetRoute demonstrates important Computer Networks concepts through an interactive web-based simulator. It combines network topology visualization, shortest-path routing, link failure and recovery, packet animation, and file handling.
+Possible future improvements include:
 
-The modular design makes the project easier to test, explain, and extend. It provides a foundation for further exploration of routing algorithms, network resilience, and interactive network simulation.
+- 📡 Simulate packet loss, latency, and bandwidth.
+- 🧠 Add more routing algorithms for comparison.
+- 🔐 Add authentication and access control.
+- 📈 Add more network performance metrics.
+- 🧪 Expand automated test coverage.
+- 🗃️ Add persistent storage for shared files.
+- 📱 Improve the dashboard for mobile devices.
+- 🛡️ Add more robust file validation and security controls.
+- 🌍 Add deployment automation and continuous integration.
 
----
+These are potential enhancements, not claims that all of them are currently implemented.
 
-<p align="center">
-  <strong>NetRoute — Explore Networks. Understand Routing. Visualize Connectivity.</strong>
-</p>
+## 🎓 17. Learning Outcomes
 
-<p align="center">
-  <sub>Computer Networks Mini-Project</sub>
-</p>
+This project helps demonstrate the following concepts:
+
+- Understanding nodes, edges, and network graphs.
+- Learning how network topologies differ.
+- Understanding shortest-path routing.
+- Exploring link costs and route selection.
+- Observing how failures can affect connectivity.
+- Connecting a Python backend to a browser-based interface.
+- Using automated tests to verify software behavior.
+- Managing source code with Git and GitHub.
+- Understanding basic web application deployment.
+
+## 👨‍💻 18. Academic Project Information
+
+**Project name:** NetRoute — Network Topology and Routing Simulator
+
+**Project type:** Computer Networks Mini Project
+
+**Primary language:** Python
+
+**Framework:** Flask
+
+**Graph library:** NetworkX
+
+**Testing framework:** pytest
+
+**Developed for:** Computer Networks learning and demonstration
+
+**Developer:** Add your name here.
+
+**Institution:** Add your college or university here.
+
+**Academic year:** Add your academic year here.
+
+## 📜 19. License
+
+If you intend to share or reuse this project publicly, add a license file that matches the permissions you want to grant. Until a license is selected and added, do not assume that the repository grants unrestricted reuse.
+
+## ✅ Conclusion
+
+NetRoute combines network topology visualization, shortest-path routing, link failure simulation, and web-based file handling in one application.
+
+It provides a practical way to explore how network connections affect routing decisions and how Python can be used to build an interactive Computer Networks learning tool.
+
+**Explore the topology. Calculate the route. Simulate the network.** 🌐
+

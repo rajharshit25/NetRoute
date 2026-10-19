@@ -488,11 +488,11 @@ This project helps demonstrate the following concepts:
 
 **Developed for:** Computer Networks learning and demonstration
 
-**Developer:** Add your name here.
+**Developer:** Harshit Raj.
 
-**Institution:** Add your college or university here.
+**Institution:** Pimpri Chinchwad University.
 
-**Academic year:** Add your academic year here.
+**Academic year:** 2026–2027.
 
 ## 📜 19. License
 

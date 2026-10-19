@@ -5,6 +5,15 @@
 </p>
 
 <p align="center">
+  🚀 <strong>Live Project:</strong>
+  <a href="https://netroute.onrender.com/">Open NetRoute Dashboard</a>
+</p>
+
+<p align="center">
+  <strong>A Simple and Interactive Computer Networks Mini Project</strong>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Python-3.14-blue?logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/Flask-Web%20Framework-black?logo=flask" alt="Flask">
   <img src="https://img.shields.io/badge/NetworkX-Graph%20Algorithms-orange" alt="NetworkX">
